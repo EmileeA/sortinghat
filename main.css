@@ -1,3 +1,15 @@
 body {
 background-image: http://getwallpapers.com/wallpaper/full/9/7/7/263576.jpg#.XXPjf13_oxM.link;
 }
+
+.display-4 {
+    text-align: center;
+}
+
+    .nameBox {
+    padding: 10px;
+}
+
+    .formText{
+    text-align: center important!;
+} 
