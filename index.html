@@ -1,43 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./main.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Sorting Hat</title>
 </head>
-
 <body>
-    <div class="jumbotron bg-light text-info">
-        <h1 class="display-4">Welcome to Hoggy Hoggy Warts!</h1>
-        <p class="lead text-muted">Boggarts lavender robes, Hermione Granger Fantastic Beasts and Where to Find Them.
-            Bee in your bonnet Hand of Glory elder wand, spectacles House Cup Bertie Bott’s Every Flavor Beans
-            Impedimenta. Stunning spells tap-dancing spider Slytherin’s Heir mewing kittens Remus Lupin. Palominos
-            scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. Padma and Parvati Sorting Hat
-            Minister of Magic blue turban remember my last.</p>
+    <div class="jumbotron">
+        <h1 class="display-4 text-warning">Welcome to Hoggy Hoggy Warts!</h1>
+        <p class="lead text-light">Boggarts lavender robes, Hermione Granger Fantastic Beasts and Where to Find Them. Bee in your bonnet Hand of Glory elder wand, spectacles House Cup Bertie Bott’s Every Flavor Beans Impedimenta. Stunning spells tap-dancing spider Slytherin’s Heir mewing kittens Remus Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. Padma and Parvati Sorting Hat Minister of Magic blue turban remember my last.</p>
         <hr class="my-4">
-        <p class="text-muted">Stunning spells tap-dancing spider Slytherin’s Heir mewing kittens Remus Lupin.</p>
-        <a class="btn btn-info btn-lg" href="#student" role="button">Let's start sorting</a>
+        <p class="lead text-light">Stunning spells tap-dancing spider Slytherin’s Heir mewing kittens Remus Lupin.</p>
+        <a class="btn btn-warning btn-lg" role="button" id="startSorting">Let's start sorting</a>
     </div>
-    <div class="nameBox border border-info rounded p-3 ml-1 mr-1">
-        <h1 class="text-info">Enter First Year's Name</h1>
-        <div class="text-center p-3 text-muted" id="student">Student: <input id="name"> <a class="btn btn-info btn-sm"
-                href="#" role="button">Sort!</a></div>
+    <div id="hiddenInput">
+    <div class="nameBox border border-light rounded p-3 ml-1 mr-1">
+    <h1 class="text-light">Enter First Year's Name</h1>
+         <div class="text-left p-3 text-light" id="student">Student: 
+        <input id="name"> 
+        <a class="btn btn-warning btn-sm text-dark" role="button" id="startSorting">Sort!</a>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    </div>
+    <div class="text-center button-container mt-2 mb-5">
+        <button id="slytherin" class="btn btn-light text-danger btn-sm">Slytherin</button>
+        <button id="ravenclaw" class="btn btn-light text-danger btn-sm">Ravenclaw</button>
+        <button id="gryffindor" class="btn btn-light text-danger btn-sm">Gryffindor</button>
+        <button id="hufflepuff" class="btn btn-light text-danger btn-sm">Hufflepuff</button>
+        <button id="all" class="btn btn-light text-danger btn-sm">All</button>
+    </div>  
+</div>
+    <div id="sortedStudents"></div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
 </body>
-
 </html>
