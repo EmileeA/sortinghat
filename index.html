@@ -10,27 +10,27 @@
 </head>
 <body>
     <div class="jumbotron">
-        <h1 class="display-4 text-warning">Welcome to Hoggy Hoggy Warts!</h1>
+        <h1 class="title text-warning">Welcome to Hoggy Hoggy Warts!</h1>
         <p class="lead text-light">Boggarts lavender robes, Hermione Granger Fantastic Beasts and Where to Find Them. Bee in your bonnet Hand of Glory elder wand, spectacles House Cup Bertie Bott’s Every Flavor Beans Impedimenta. Stunning spells tap-dancing spider Slytherin’s Heir mewing kittens Remus Lupin. Palominos scarlet train black robes, Metamorphimagus Niffler dead easy second bedroom. Padma and Parvati Sorting Hat Minister of Magic blue turban remember my last.</p>
         <hr class="my-4">
         <p class="lead text-light">Stunning spells tap-dancing spider Slytherin’s Heir mewing kittens Remus Lupin.</p>
-        <a class="btn btn-warning btn-lg" role="button" id="startSorting">Let's start sorting</a>
+        <a href="#hiddenInput" class="btn btn-warning btn-lg" role="button" id="startSorting">Let's start sorting</a>
     </div>
     <div id="hiddenInput">
-    <div class="nameBox border border-light rounded p-3 ml-1 mr-1">
+    <div class="studentName border border-light rounded p-3 ml-1 mr-1">
     <h1 class="text-light">Enter First Year's Name</h1>
          <div class="text-left p-3 text-light" id="student">Student: 
-        <input id="name"> 
-        <a class="btn btn-warning btn-sm text-dark" role="button" id="startSorting">Sort!</a>
+            <input id="inputName" placeholder="Your Name Here"> 
+        <a href="#bottom" class="btn btn-warning btn-sm text-dark" role="button" id="sortBtn">Sort!</a>
     </div>
     </div>
-    <div class="text-center button-container mt-2 mb-5">
+    <!--<div class="text-center button-container mt-2 mb-5 mx-auto">
         <button id="slytherin" class="btn btn-light text-danger btn-sm">Slytherin</button>
         <button id="ravenclaw" class="btn btn-light text-danger btn-sm">Ravenclaw</button>
         <button id="gryffindor" class="btn btn-light text-danger btn-sm">Gryffindor</button>
         <button id="hufflepuff" class="btn btn-light text-danger btn-sm">Hufflepuff</button>
         <button id="all" class="btn btn-light text-danger btn-sm">All</button>
-    </div>  
+    </div>  -->
 </div>
     <div id="sortedStudents"></div>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

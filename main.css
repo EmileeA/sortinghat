@@ -2,11 +2,12 @@ body {
     background-color: #d86234;
 }
 
-.display-4 {
+.title {
     text-align: center;
 }
 
-.nameBox {
+
+.studentName {
     padding: 10px;
 }
 
@@ -14,4 +15,21 @@ body {
 .jumbotron {
     text-align: center important!;	    
     background-color: #d86234;
+}
+
+.card {
+    margin: 2px;
+    width: 50px;
+    background-color: bisque;
+}
+
+.card-body {
+    text-align: center;
+    background-color: bisque;
+}
+
+#sortedStudents{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
