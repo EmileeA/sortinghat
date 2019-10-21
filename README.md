@@ -5,10 +5,10 @@ HTML, CSS, Javascript, Bootstrap
 
 ## Description 
 
-### Press the button "Let's start sorting" to start the program.
-### Enter a name:
-### The program assigns the name to a hogwart house.
-### Expel a student you wish to remove.
+* Press the button "Let's start sorting" to start the program.
+* Enter a name:
+* The program assigns the name to a hogwart house.
+* Expel a student you wish to remove.
 
 ![screenshot](https://raw.githubusercontent.com/EmileeA/sortinghat/master/screenshots/sorting-hat.png)
 
