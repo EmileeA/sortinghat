@@ -10,7 +10,7 @@ HTML, CSS, Javascript, Bootstrap
 ### The program assigns the name to a hogwart house.
 ### Expel a student you wish to remove.
 
-![screenshot]()
+![screenshot](https://raw.githubusercontent.com/EmileeA/sortinghat/master/screenshots/sorting-hat.png)
 
 ## How to run
 * Clone down this project
